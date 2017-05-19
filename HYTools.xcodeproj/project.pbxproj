@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39E68FE71EC3FF3900F56F1C /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E68FE61EC3FF3900F56F1C /* NSDictionary+Extension.m */; };
 		39E7ED041EC0756200909818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7ED031EC0756200909818 /* main.m */; };
 		39E7ED071EC0756200909818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7ED061EC0756200909818 /* AppDelegate.m */; };
 		39E7ED0A1EC0756200909818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7ED091EC0756200909818 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39E68FE51EC3FF3900F56F1C /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		39E68FE61EC3FF3900F56F1C /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		39E7ECFF1EC0756200909818 /* HYTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E7ED031EC0756200909818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		39E7ED051EC0756200909818 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 			children = (
 				39E7ED3B1EC0764300909818 /* UIImage+Color.h */,
 				39E7ED3C1EC0764300909818 /* UIImage+Color.m */,
+				39E68FE51EC3FF3900F56F1C /* NSDictionary+Extension.h */,
+				39E68FE61EC3FF3900F56F1C /* NSDictionary+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				39E7ED071EC0756200909818 /* AppDelegate.m in Sources */,
 				39E7ED3D1EC0764300909818 /* UIImage+Color.m in Sources */,
 				39E7ED401EC0767B00909818 /* HYResourcePath.m in Sources */,
+				39E68FE71EC3FF3900F56F1C /* NSDictionary+Extension.m in Sources */,
 				39E7ED041EC0756200909818 /* main.m in Sources */,
 				39E7ED3A1EC0761F00909818 /* HYDateFormatter.m in Sources */,
 			);
@@ -564,6 +570,7 @@
 				39E7ED2E1EC0756200909818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39E7ED2F1EC0756200909818 /* Build configuration list for PBXNativeTarget "HYToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +579,7 @@
 				39E7ED311EC0756200909818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39E7ED321EC0756200909818 /* Build configuration list for PBXNativeTarget "HYToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +588,7 @@
 				39E7ED341EC0756200909818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
