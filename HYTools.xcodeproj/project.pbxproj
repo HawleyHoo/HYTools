@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		39D322351ED5661F003508D8 /* UIControl+JKSecurityExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D322321ED5661F003508D8 /* UIControl+JKSecurityExtension.m */; };
 		39D322361ED5661F003508D8 /* NSObject+RuntimeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D322341ED5661F003508D8 /* NSObject+RuntimeExtension.m */; };
+		39D322391ED5A136003508D8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D322381ED5A136003508D8 /* SystemConfiguration.framework */; };
+		39D3223E1ED5A4C3003508D8 /* getgateway.c in Sources */ = {isa = PBXBuildFile; fileRef = 39D3223B1ED5A4C3003508D8 /* getgateway.c */; };
 		39E68FE71EC3FF3900F56F1C /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E68FE61EC3FF3900F56F1C /* NSDictionary+Extension.m */; };
 		39E7ED041EC0756200909818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7ED031EC0756200909818 /* main.m */; };
 		39E7ED071EC0756200909818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7ED061EC0756200909818 /* AppDelegate.m */; };
@@ -45,6 +47,10 @@
 		39D322321ED5661F003508D8 /* UIControl+JKSecurityExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+JKSecurityExtension.m"; sourceTree = "<group>"; };
 		39D322331ED5661F003508D8 /* NSObject+RuntimeExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeExtension.h"; sourceTree = "<group>"; };
 		39D322341ED5661F003508D8 /* NSObject+RuntimeExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeExtension.m"; sourceTree = "<group>"; };
+		39D322381ED5A136003508D8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		39D3223B1ED5A4C3003508D8 /* getgateway.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getgateway.c; sourceTree = "<group>"; };
+		39D3223C1ED5A4C3003508D8 /* getgateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getgateway.h; sourceTree = "<group>"; };
+		39D3223D1ED5A4C3003508D8 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
 		39E68FE51EC3FF3900F56F1C /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		39E68FE61EC3FF3900F56F1C /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		39E7ECFF1EC0756200909818 /* HYTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D322391ED5A136003508D8 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +106,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39D322371ED5A135003508D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39D322381ED5A136003508D8 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39D3223A1ED5A4C3003508D8 /* RouteAddress */ = {
+			isa = PBXGroup;
+			children = (
+				39D3223B1ED5A4C3003508D8 /* getgateway.c */,
+				39D3223C1ED5A4C3003508D8 /* getgateway.h */,
+				39D3223D1ED5A4C3003508D8 /* route.h */,
+			);
+			path = RouteAddress;
+			sourceTree = "<group>";
+		};
 		39E7ECF61EC0756200909818 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +131,7 @@
 				39E7ED1B1EC0756200909818 /* HYToolsTests */,
 				39E7ED261EC0756200909818 /* HYToolsUITests */,
 				39E7ED001EC0756200909818 /* Products */,
+				39D322371ED5A135003508D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +148,7 @@
 		39E7ED011EC0756200909818 /* HYTools */ = {
 			isa = PBXGroup;
 			children = (
+				39D3223A1ED5A4C3003508D8 /* RouteAddress */,
 				39E7ED351EC075D300909818 /* Category */,
 				39E7ED361EC075D300909818 /* Headers */,
 				39E7ED371EC075D300909818 /* Others */,
@@ -343,6 +370,7 @@
 				39E7ED401EC0767B00909818 /* HYResourcePath.m in Sources */,
 				39E68FE71EC3FF3900F56F1C /* NSDictionary+Extension.m in Sources */,
 				39E7ED041EC0756200909818 /* main.m in Sources */,
+				39D3223E1ED5A4C3003508D8 /* getgateway.c in Sources */,
 				39D322351ED5661F003508D8 /* UIControl+JKSecurityExtension.m in Sources */,
 				39E7ED3A1EC0761F00909818 /* HYDateFormatter.m in Sources */,
 			);
@@ -495,6 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5C5VZ6884A;
 				INFOPLIST_FILE = HYTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5C5VZ6884A;
 				INFOPLIST_FILE = HYTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
