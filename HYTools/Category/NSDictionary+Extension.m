@@ -56,3 +56,61 @@
 }
 
 @end
+
+
+@implementation NSArray (Extension)
+
+- (id)fc_objectAtIndex:(NSUInteger)index {
+    if (index < self.count) {
+        return [self objectAtIndex:index];
+    }
+    return nil;
+    //    if (index >= self.count) {
+    //        return nil;
+    //    }
+    //    id value = [self objectAtIndex:index];
+    //    if (value == [NSNull null]) {
+    //        return nil;
+    //    }
+    //    NSNull是一个类，它只有一个方法：+ (NSNull *) null;
+    //    [NSNull null]用来在NSArray和NSDictionary中加入非nil（表示列表结束）的空值.   [NSNull null]是一个对象，用来表示空，他用在不能使用nil的场合。
+}
+@end
+
+@implementation NSMutableArray (Extension)
+
+- (id)fc_objectAtIndex:(NSUInteger)index {
+    if (index < self.count) {
+        return [self objectAtIndex:index];
+    }
+    return nil;
+}
+
+- (void)fc_addObject:(id)anObject {
+    if (anObject != nil && [anObject isKindOfClass:[NSNull class]] == NO) {
+        [self addObject:anObject];
+    } else {
+        NSLog(@"--------------fc_addObject:%@", [NSThread callStackSymbols]);
+    }
+}
+
+- (void)fc_insertObject:(id)anObject atIndex:(NSUInteger)index {
+    if (index <= self.count && anObject != nil && [anObject isKindOfClass:[NSNull class]] == NO) {
+        [self insertObject:anObject atIndex:index];
+    } else {
+        NSLog(@"--------------fc_insertObject:%@", [NSThread callStackSymbols]);
+        
+    }
+}
+
+- (void)fc_removeObjectAtIndex:(NSUInteger)index {
+    if (index < self.count) {
+        [self removeObjectAtIndex:index];
+    } else {
+        NSLog(@"--------------fc_removeObjectAtIndex:%@", [NSThread callStackSymbols]);
+        
+    }
+}
+@end
+
+

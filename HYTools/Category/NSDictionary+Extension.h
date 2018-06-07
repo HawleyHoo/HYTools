@@ -13,3 +13,26 @@
 - (id)processDictionaryIsNSNull:(id)obj;
 
 @end
+
+
+
+
+@interface NSArray (Extension)
+
+/**防止数组取值越界*/
+- (id)fc_objectAtIndex:(NSUInteger)index;
+
+@end
+
+@interface NSMutableArray (Extension)
+
+/**防止数组取值越界*/
+- (id)fc_objectAtIndex:(NSUInteger)index;
+
+- (void)fc_addObject:(id)anObject;
+
+- (void)fc_insertObject:(id)anObject atIndex:(NSUInteger)index;
+
+- (void)fc_removeObjectAtIndex:(NSUInteger)index;
+
+@end
