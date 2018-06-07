@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger, DDButtonEdgeInsetsStyle) {
 };
 @interface UIButton (ImageTitleSpacing)
 
-**
+/**
 *  设置BarItemButton的titleLabel和imageView的布局样式，及间距
 *
 *  @param style titleLabel和imageView的布局样式
