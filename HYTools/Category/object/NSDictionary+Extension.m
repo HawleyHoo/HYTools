@@ -55,6 +55,20 @@
     }
 }
 
+- (NSString *)descriptionWithLocale:(id)locale {
+    NSMutableString *mutStr = [NSMutableString string];
+    [mutStr appendString:@"{"];
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        [mutStr appendFormat:@"\n\t%@ = %@,",key,obj];
+    }];
+    //去掉最后一个逗号（,）
+    if ([mutStr hasSuffix:@","]) {
+        NSString *str = [mutStr substringToIndex:mutStr.length - 1];
+        mutStr = [NSMutableString stringWithString:str];
+    }
+    [mutStr appendString:@"\n}"];
+    return mutStr;
+}
 @end
 
 
@@ -75,6 +89,24 @@
     //    NSNull是一个类，它只有一个方法：+ (NSNull *) null;
     //    [NSNull null]用来在NSArray和NSDictionary中加入非nil（表示列表结束）的空值.   [NSNull null]是一个对象，用来表示空，他用在不能使用nil的场合。
 }
+
+-(NSString *)descriptionWithLocale:(id)locale
+{
+    NSMutableString *msr = [NSMutableString string];
+    [msr appendString:@"["];
+    for (id obj in self) {
+        [msr appendFormat:@"\n\t%@,",obj];
+    }
+    //去掉最后一个逗号（,）
+    if ([msr hasSuffix:@","]) {
+        NSString *str = [msr substringToIndex:msr.length - 1];
+        msr = [NSMutableString stringWithString:str];
+    }
+    [msr appendString:@"\n]"];
+    return msr;
+}
+
+
 @end
 
 @implementation NSMutableArray (Extension)

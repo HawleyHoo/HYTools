@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (Extension)
-
+// 去除字典里的空值
 - (id)processDictionaryIsNSNull:(id)obj;
 
 @end

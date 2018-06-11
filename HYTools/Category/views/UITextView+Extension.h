@@ -1,14 +1,15 @@
 //
-//  UITextField+Helper.h
+//  UITextView+Extension.h
 //  HYTools
 //
-//  Created by Hoo on 2018/6/7.
+//  Created by Hoo on 2018/6/8.
 //  Copyright © 2018年 net.fitcome.www. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UITextField (Helper)
+@interface UITextView (Extension)
+
 
 /**
  *  是否支持视图上移
@@ -29,5 +30,6 @@
 @property (nonatomic, assign, readonly) CGFloat totalHeight;
 @property (nonatomic, strong, readonly) UITapGestureRecognizer *tapGesture;
 @property (nonatomic, assign, readonly) BOOL hasContentOffset;
+
 
 @end

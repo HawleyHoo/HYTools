@@ -1,14 +1,14 @@
 //
-//  UITextField+Helper.m
+//  UITextView+Extension.m
 //  HYTools
 //
-//  Created by Hoo on 2018/6/7.
+//  Created by Hoo on 2018/6/8.
 //  Copyright © 2018年 net.fitcome.www. All rights reserved.
 //
 
-#import "UITextField+Helper.h"
-#import <objc/runtime.h>
+#import "UITextView+Extension.h"
 
+#import <objc/runtime.h>
 
 static char canMoveKey;
 static char moveViewKey;
@@ -20,8 +20,9 @@ static char totalHeightKey;
 static char keyboardHeightKey;
 static char hasContentOffsetKey;
 
-@implementation UITextField (Helper)
-//@dynamic 动态合成: 告诉编译器, getter/setter 将由程序员手动去实现.
+
+@implementation UITextView (Extension)
+
 @dynamic canMove;
 @dynamic moveView;
 @dynamic heightToKeyboard;
@@ -51,6 +52,7 @@ static char hasContentOffsetKey;
         SEL mySel4 = @selector(setupInitWithCoder:);
         [self exchangeSystemSel:systemSel4 bySel:mySel4];
     });
+    [super load];
 }
 
 // 交换方法
@@ -63,7 +65,7 @@ static char hasContentOffsetKey;
         //如果成功，说明类中不存在这个方法的实现
         //将被交换方法的实现替换到这个并不存在的实现
         class_replaceMethod(self, mySel, method_getImplementation(systemMethod), method_getTypeEncoding(systemMethod));
-    } else {
+    }else{
         //否则，交换两个方法的实现
         method_exchangeImplementations(systemMethod, myMethod);
     }
@@ -87,7 +89,6 @@ static char hasContentOffsetKey;
     self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
 }
 
-
 - (void)showAction:(NSNotification *)sender {
     if (!self.canMove) {
         return;
@@ -108,7 +109,6 @@ static char hasContentOffsetKey;
     if (self.keyboardHeight == 0) {
         return;
     }
-    // 将fromView坐标系中的一个点转换为toView中的一个点。
     CGFloat fieldYInWindow = [self convertPoint:self.bounds.origin toView:[UIApplication sharedApplication].keyWindow].y;
     CGFloat height = (fieldYInWindow + self.heightToKeyboard + self.frame.size.height) - self.keyboardY;
     CGFloat moveHeight = height > 0 ? height : 0;
@@ -185,8 +185,6 @@ static char hasContentOffsetKey;
     }
     return nil;
 }
-
-#pragma mark --- setter  getter
 
 - (void)setCanMove:(BOOL)canMove {
     objc_setAssociatedObject(self, &canMoveKey, @(canMove), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -265,5 +263,5 @@ static char hasContentOffsetKey;
     return [objc_getAssociatedObject(self, &hasContentOffsetKey) boolValue];
 }
 
-
 @end
+

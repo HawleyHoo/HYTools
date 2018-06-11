@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390A2AC320CE48B800CD88B7 /* JKTextFieldObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 390A2AC220CE48B700CD88B7 /* JKTextFieldObserver.m */; };
+		390A2AC620CE48EB00CD88B7 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 390A2AC520CE48EA00CD88B7 /* NSString+Emoji.m */; };
+		390A2ACA20CE499000CD88B7 /* FCAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 390A2AC820CE498F00CD88B7 /* FCAccountModel.m */; };
 		397F7DF820C7C10B00E3E78C /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 397F7DF720C7C10B00E3E78C /* NSDate+Extension.m */; };
 		397F7DFB20C7C60B00E3E78C /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 397F7DFA20C7C60B00E3E78C /* UIButton+ImageTitleSpacing.m */; };
 		397F7DFE20C7C7FE00E3E78C /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 397F7DFD20C7C7FE00E3E78C /* NSData+JSON.m */; };
@@ -16,6 +19,7 @@
 		39D322361ED5661F003508D8 /* NSObject+RuntimeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D322341ED5661F003508D8 /* NSObject+RuntimeExtension.m */; };
 		39D322391ED5A136003508D8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D322381ED5A136003508D8 /* SystemConfiguration.framework */; };
 		39D3223E1ED5A4C3003508D8 /* getgateway.c in Sources */ = {isa = PBXBuildFile; fileRef = 39D3223B1ED5A4C3003508D8 /* getgateway.c */; };
+		39DE1BF220CA672700D9F596 /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE1BF120CA672700D9F596 /* UITextView+Extension.m */; };
 		39E68FE71EC3FF3900F56F1C /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E68FE61EC3FF3900F56F1C /* NSDictionary+Extension.m */; };
 		39E7ED041EC0756200909818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7ED031EC0756200909818 /* main.m */; };
 		39E7ED071EC0756200909818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7ED061EC0756200909818 /* AppDelegate.m */; };
@@ -48,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390A2AC120CE48B700CD88B7 /* JKTextFieldObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTextFieldObserver.h; sourceTree = "<group>"; };
+		390A2AC220CE48B700CD88B7 /* JKTextFieldObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTextFieldObserver.m; sourceTree = "<group>"; };
+		390A2AC420CE48EA00CD88B7 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		390A2AC520CE48EA00CD88B7 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		390A2AC820CE498F00CD88B7 /* FCAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAccountModel.m; sourceTree = "<group>"; };
+		390A2AC920CE498F00CD88B7 /* FCAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAccountModel.h; sourceTree = "<group>"; };
 		397F7DF620C7C10B00E3E78C /* NSDate+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		397F7DF720C7C10B00E3E78C /* NSDate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		397F7DF920C7C60B00E3E78C /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 		39D3223B1ED5A4C3003508D8 /* getgateway.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getgateway.c; sourceTree = "<group>"; };
 		39D3223C1ED5A4C3003508D8 /* getgateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getgateway.h; sourceTree = "<group>"; };
 		39D3223D1ED5A4C3003508D8 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		39DE1BF020CA672700D9F596 /* UITextView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
+		39DE1BF120CA672700D9F596 /* UITextView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
 		39E68FE51EC3FF3900F56F1C /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		39E68FE61EC3FF3900F56F1C /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		39E7ECFF1EC0756200909818 /* HYTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390A2AC720CE496E00CD88B7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				390A2AC920CE498F00CD88B7 /* FCAccountModel.h */,
+				390A2AC820CE498F00CD88B7 /* FCAccountModel.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		397F7E0220C90E6D00E3E78C /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +151,8 @@
 				397F7DFA20C7C60B00E3E78C /* UIButton+ImageTitleSpacing.m */,
 				397F7E0420C90EDB00E3E78C /* UITextField+Helper.h */,
 				397F7E0520C90EDB00E3E78C /* UITextField+Helper.m */,
+				39DE1BF020CA672700D9F596 /* UITextView+Extension.h */,
+				39DE1BF120CA672700D9F596 /* UITextView+Extension.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -195,6 +218,7 @@
 		39E7ED011EC0756200909818 /* HYTools */ = {
 			isa = PBXGroup;
 			children = (
+				390A2AC720CE496E00CD88B7 /* Account */,
 				39D3223A1ED5A4C3003508D8 /* RouteAddress */,
 				39E7ED351EC075D300909818 /* Category */,
 				39E7ED361EC075D300909818 /* Headers */,
@@ -260,6 +284,10 @@
 		39E7ED371EC075D300909818 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				390A2AC120CE48B700CD88B7 /* JKTextFieldObserver.h */,
+				390A2AC220CE48B700CD88B7 /* JKTextFieldObserver.m */,
+				390A2AC420CE48EA00CD88B7 /* NSString+Emoji.h */,
+				390A2AC520CE48EA00CD88B7 /* NSString+Emoji.m */,
 				39E7ED3E1EC0767B00909818 /* HYResourcePath.h */,
 				39E7ED3F1EC0767B00909818 /* HYResourcePath.m */,
 				39E7ED381EC0761F00909818 /* HYDateFormatter.h */,
@@ -404,13 +432,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390A2AC620CE48EB00CD88B7 /* NSString+Emoji.m in Sources */,
 				39E7ED0A1EC0756200909818 /* ViewController.m in Sources */,
 				397F7DFE20C7C7FE00E3E78C /* NSData+JSON.m in Sources */,
 				39E7ED071EC0756200909818 /* AppDelegate.m in Sources */,
 				397F7DFB20C7C60B00E3E78C /* UIButton+ImageTitleSpacing.m in Sources */,
 				397F7DF820C7C10B00E3E78C /* NSDate+Extension.m in Sources */,
+				390A2AC320CE48B800CD88B7 /* JKTextFieldObserver.m in Sources */,
 				397F7E0620C90EDB00E3E78C /* UITextField+Helper.m in Sources */,
 				39D322361ED5661F003508D8 /* NSObject+RuntimeExtension.m in Sources */,
+				390A2ACA20CE499000CD88B7 /* FCAccountModel.m in Sources */,
+				39DE1BF220CA672700D9F596 /* UITextView+Extension.m in Sources */,
 				39E7ED3D1EC0764300909818 /* UIImage+Color.m in Sources */,
 				39E7ED401EC0767B00909818 /* HYResourcePath.m in Sources */,
 				39E68FE71EC3FF3900F56F1C /* NSDictionary+Extension.m in Sources */,

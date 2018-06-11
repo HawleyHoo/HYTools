@@ -58,18 +58,18 @@ static inline NSValue *centerValue() {
 //其他宏定义
 
 #pragma mark- 其他宏定义
-static inline NSString *CurrentDevice() {
-    return [UIDevice currentDevice].model;
-}
-static inline BOOL isiPad() {
-    return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad;
-}
-static inline BOOL isiPhone() {
-    return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone;
-}
-static inline BOOL iPhone4Or4S() {
-    return SCREENHEIGHT() == 480;
-}
+//static inline NSString *CurrentDevice() {
+//    return [UIDevice currentDevice].model;
+//}
+//static inline BOOL isiPad() {
+//    return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad;
+//}
+//static inline BOOL isiPhone() {
+//    return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone;
+//}
+//static inline BOOL iPhone4Or4S() {
+//    return SCREENHEIGHT() == 480;
+//}
 
 static inline BOOL isiPhoneX() {
     return CGSizeEqualToSize(SCREENSIZE(), CGSizeMake(375.f, 812.f)) || CGSizeEqualToSize(SCREENSIZE(), CGSizeMake(812.f, 375.f));
